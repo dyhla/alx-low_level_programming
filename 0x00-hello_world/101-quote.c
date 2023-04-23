@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	write(2,"and that piece of art is useful\n", 59);
-	return (0);
+	printf("and that piece of art is useful\n");
+	return (1);
 }
