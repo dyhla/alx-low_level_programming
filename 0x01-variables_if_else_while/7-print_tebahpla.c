@@ -8,11 +8,12 @@
 
 int main(void)
 {
-	int i;
+	int x = 122;
 
-	for (i = 0; i <= 9; i++)
+	while (x >= 97)
 	{
-		putchar(i + 48);
+		putchar(x);
+		x--;
 	}
 	putchar('\n');
 	return (0);
