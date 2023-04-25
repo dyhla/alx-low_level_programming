@@ -1,23 +1,24 @@
 #include <stdio.h>
 
 /**
- * main - prints numbers in lower case
+ * main - prints number with space
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int n;
-	int m;
+	int y;
 
-	for (n = 48; n <= 57; n++)
+	for (y = 48; y <= 57; y++)
 	{
-		putchar(n);
-	}
-	for (m = 97; m <= 102; m++)
-	{
-		putchar(m);
+		putchar(y);
+		if (y == 57)
+		{
+			continue;
+		}
+		putchar(',');
+		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
