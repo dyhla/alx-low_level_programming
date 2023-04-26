@@ -25,7 +25,7 @@ int myFunction(void)
 						continue;
 					putchar(',');
 					putchar(' ');
-	return (0); 
+					return (0);
 				}
 			}
 		}
@@ -39,4 +39,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
