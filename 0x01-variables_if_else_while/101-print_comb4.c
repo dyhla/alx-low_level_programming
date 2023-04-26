@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main -Entry point
+ * myFunction - Prints unique combinations of digits 
  * Description: puts unique combinations of digits
- * Return: always 0
+ * This function prints all unique combinations of digits from unique, in the group of three, separated by commas and spacs. Each group of digit is printed only once
  */
 
 void  myFunction(void)
