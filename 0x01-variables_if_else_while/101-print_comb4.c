@@ -6,7 +6,7 @@
  * Return: always 0
  */
 
-int main(void)
+int myFunction()
 {
 	int x, y, z;
 
@@ -25,10 +25,19 @@ int main(void)
 						continue;
 					putchar(',');
 					putchar(' ');
-					return (0);
+
+					return 0; 
 				}
 			}
 		}
 	}
+	return 0;
+}
+
+int main(void)
+{
+	myFunction();
+	putchar('\n');
+	return 0;
 }
 
