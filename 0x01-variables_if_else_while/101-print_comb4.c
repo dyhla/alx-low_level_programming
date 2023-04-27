@@ -10,28 +10,21 @@
 
 int main(void)
 {
-	int d, p, q;
+	int a, b;
 
-	for (d = '0'; d < '9'; d++)
+	for (a  = '0'; a  < '9'; a++)
 	{
-		for (p = d + 1; p <= '9'; p++)
+		for (b = a + 1; b  <= '9'; b++)
 		{
-			for (q = p + 1; q <= 9; q++)
+			for (b = a + 1; b <= 9; b++)
 			{
-				printf("%d%d%d\n", d, p, q);
-			}
-			{
-				if ((p != d) !=q)
-				{
-					putchar(d);
-					putchar(p);
-					putchar(q);
-					putchar(d % 10 + '0');
-					if (d == '7' && p == '8')
-						continue;
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(a + '0');
+				putchar(b + '0');
+				 if (a != 8 || b != 9)
+				 {
+					  putchar(',');
+					  putchar(' ');
+				 }
 			}
 		}
 	}
