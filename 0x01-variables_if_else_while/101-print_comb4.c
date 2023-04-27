@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  *  main - entry point
  *  Description: puts unique combination of numbers
  *  Return: always 0
