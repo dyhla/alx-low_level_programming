@@ -1,29 +1,32 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-/**
- * myFunction - Prints unique combinations of digits
- *
- * This function prints all unique combinations of digits from 0 to 9, in
- * groups of three, separated by commas and spaces. Each group of digits is
- * printed only once.
+/*
+ *  main - entry point
+ *  Description: prints combination of numbers
+ *  Return: always 0
  */
 
-void  myFunction(void)
+int main(void)
 {
-	int x, y, z;
+	int d, p, q;
 
-	for (x = 0; x <= 7; x++)
+	for (d = '0'; d < '9'; d++)
 	{
-		for (y = x + 1; y <= 8; y++)
+		for (p = d + 1; p <= '9'; p++)
 		{
-			for (z = y + 1; z <= 9; z++)
+			for (q = p + 1; q <= 9; q++)
 			{
-				if ((x != y) != z)
+				printf("%d%d%d\n", d, p, q);
+			}
+			{
+				if ((p != d) !=q)
 				{
-					putchar(x + '0');
-					putchar(y + '0');
-					putchar(z + '0');
-					if (x == 7 && y == 8)
+					putchar(d);
+					putchar(p);
+					putchar(q);
+					if (d == '7' && p == '8')
 						continue;
 					putchar(',');
 					putchar(' ');
@@ -31,11 +34,6 @@ void  myFunction(void)
 			}
 		}
 	}
-}
-
-int main(void)
-{
-	myFunction();
 	putchar('\n');
 	return (0);
 }
