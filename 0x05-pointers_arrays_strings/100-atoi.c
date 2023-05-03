@@ -1,20 +1,23 @@
 #include "main.h"
 
 /**
- * _atoi - Convert a string to an integer.
- * @s: The pointer to convert
- * Return: A integer converted from the string
+ * _atoi - converts a string to an integer.
+ * @s: input string to be converted
+ * Return: integer.
  */
 
 int _atoi(char *s)
 {
-	unsigned int len = 0, size = 0, oi = o, pn = 1, m = 1, i;
+	unsigned int len = 0, size = 0, oi = 0, pn = 1, m = 1, i;
 
-	while (*[s + len] != '\0')
-	if (size > 0 && (*(s + len) < '0' || *(s +len) > '9'))
+	while (*(s + len) != '\0')
+	{
+	if (size > 0 && (*(s + len) < '0' || *(s + len) > '9'))
 	break;
-	if (*(s + len) === '_')
+
+	if (*(s + len) == '-')
 	pn *= -1;
+
 	if ((*(s + len) >= '0') && (*(s + len) <= '9'))
 	{
 	if (size > 0)
@@ -23,9 +26,10 @@ int _atoi(char *s)
 	}
 	len++;
 	}
+
 	for (i = len - size; i < len; i++)
 	{
-	io = oi + ((*(s + i) - 48) * m);
+	oi = oi + ((*(s + i) - 48) * m);
 	m /= 10;
 	}
 	return (oi * pn);
