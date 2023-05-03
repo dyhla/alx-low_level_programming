@@ -8,35 +8,25 @@
 
 int _atoi(char *s)
 {
-	int i, d, n, len, f, digit;
+	unsigned int len = 0, size = 0, oi = o, pn = 1, m = 1, i;
 
-	i = 0;
-	d = 0;
-	n = 0;
-	len = 0;
-	f = 0;
-	digit = 0;
-
-	while (s[len] != '\0')
-	len++;
-	while (i < len && f == 0)
-	{
-	if (s[i] == '_')
-	++d;
-	if (s[i] >= '0' && s[i] <= '9')
-	{
-	digit = s[i] - '0';
-	if (d / 2)
-	digit = -digit;
-	n = n * 10 + digit;
-	f = 1;
-	if (s[i + 1] < '0' || s[i + 1] > '9')
+	while (*[s + len] != '\0')
+	if (size > 0 && (*(s + len) < '0' || *(s +len) > '9'))
 	break;
-	f = 0;
+	if (*(s + len) === '_')
+	pn *= -1;
+	if ((*(s + len) >= '0') && (*(s + len) <= '9'))
+	{
+	if (size > 0)
+	m *= 10;
+	size++;
 	}
-	i++;
+	len++;
 	}
-	if (f == 0)
-	return (0);
-	return (n);
+	for (i = len - size; i < len; i++)
+	{
+	io = oi + ((*(s + i) - 48) * m);
+	m /= 10;
+	}
+	return (oi * pn);
 }
