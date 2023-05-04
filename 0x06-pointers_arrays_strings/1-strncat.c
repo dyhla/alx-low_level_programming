@@ -3,6 +3,7 @@
 /**
  * _strncat - Concatenates two strings  using using at most
  * an inputted number of bytes from src.
+ * @src: The string to append to dest.
  * @dest: The string to be appended upon.
  * @n: The number of bytes from src to be appended to dest
  * Return: A pointer to the resulting string dest.
