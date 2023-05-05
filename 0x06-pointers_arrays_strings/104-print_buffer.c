@@ -1,7 +1,5 @@
 #include "main.h"
-
 #include <stdio.h>
-
 
 /**
  * print_buffer - prints buffer
@@ -17,7 +15,6 @@ void print_buffer(char *b, int size)
 	o = 0;
 
 	if (size <= 0)
-
 	{
 		printf("\n");
 		return;
